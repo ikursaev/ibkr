@@ -14,6 +14,9 @@ https://www.youtube.com/watch?v=jKWbW7Wgm0w
 "XEC": 8%
 ```
 
+1. Run command
 ```
 podman run --name ibeam --env IBEAM_ACCOUNT= --env IBEAM_PASSWORD= -p 5000:5000 voyz/ibeam
 ```
+2. Go to https://localhost:5000 and login
+3. Run `python __init__.py`
