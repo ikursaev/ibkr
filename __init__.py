@@ -30,7 +30,7 @@ class Position:
     sum_to_rebalance: float = .0
     quantity_to_rebalance: int = 0
 
-uri = "https://localhost:50060"
+uri = "https://localhost:5000"
 
 api_uri = f"{uri}/v1/api/"
 
