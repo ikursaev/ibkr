@@ -2,6 +2,7 @@ How many stocks should I buy to create/rebalance Ben Felix's Five Factor portfol
 =========
 
 https://www.pwlcapital.com/resources/five-factor-investing-with-etfs/
+
 https://www.youtube.com/watch?v=jKWbW7Wgm0w
 
 ```
