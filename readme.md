@@ -1,3 +1,3 @@
 ```
-podman run --name ibeam --env IBEAM_ACCOUNT= --env IBEAM_PASSWORD= --env IBEAM_AUTHENTICATION_STRATEGY=B -p 50060:5000 voyz/ibeam
+podman run --name ibeam --env IBEAM_ACCOUNT= --env IBEAM_PASSWORD= -p 5000:5000 voyz/ibeam
 ```
