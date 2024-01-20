@@ -14,9 +14,17 @@ https://www.youtube.com/watch?v=jKWbW7Wgm0w
 "XEC": 8%
 ```
 
-1. Run command
+US counterparts:
+```
+"VUN": "VTI",
+"XEF": "IEFA",
+"XEC": "IEMG"
+```
+
+1. You need to buy at least one of each stock
+2. Run command
 ```
 podman run --name ibeam --env IBEAM_ACCOUNT=your_account --env IBEAM_PASSWORD=your_password -p 5000:5000 voyz/ibeam
 ```
-2. Go to https://localhost:5000 and login
-3. Run `python __init__.py`
+3. Go to https://localhost:5000 and login
+4. Optionally change PREFER_COUNTERPARTS in the script and run `python __init__.py`
