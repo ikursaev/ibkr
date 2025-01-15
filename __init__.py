@@ -39,8 +39,6 @@ class Position:
 
 uri = "https://localhost:5000"
 
-api_uri = f"{uri}/v1/api/"
-
 async def get_account_id(session) -> str:
     async with session.get("/v1/api/portfolio/accounts") as accounts:
         accounts = await accounts.json()
@@ -129,8 +127,8 @@ async def main():
                 ) / total_with_rebalance
 
                 print(
-                    "How many stock of", counterpart.symbol, "to buy:", counterpart.quantity_to_rebalance,
-                    ". Price:", round(counterpart.price_in_usd, 4),
+                    counterpart.symbol, "buy", counterpart.quantity_to_rebalance,
+                    "for", round(counterpart.price_in_usd, 4),
                     "Real percent:", round(percent_real, 4), "\n"
                 )
             else:
@@ -139,7 +137,7 @@ async def main():
                 )
 
                 print("Sum to rebalance: ", position.sum_to_rebalance)
-                
+
                 position.quantity_to_rebalance = int(position.sum_to_rebalance / position.price_in_usd)
 
                 if position.currency == "CAD":
@@ -150,8 +148,8 @@ async def main():
                 )
 
                 print(
-                    "How many stock of", position.symbol, "to buy:", position.quantity_to_rebalance,
-                    ". Price:", round(position.price_in_usd, 4),
+                    position.symbol, "buy", position.quantity_to_rebalance,
+                    "for", round(position.price_in_usd, 4),
                     "Real percent:", round(position.percent_real, 4), "\n"
                 )
 
